@@ -2,12 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
-  background-image: url(/diego-jimenez-A-NVHPka9Rk-unsplash.jpg);
+  background-image: linear-gradient(rgba(68, 62, 62, 0.7), rgba(68, 62, 62, 0.7)), url(/diego-jimenez-A-NVHPka9Rk-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FF7757;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */
