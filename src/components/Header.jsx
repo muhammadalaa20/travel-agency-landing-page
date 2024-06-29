@@ -12,9 +12,9 @@ export default function Header() {
       <div className='lg:hidden'>
         <Mobilenav />
       </div>
-      <div className='hero-section flex flex-col justify-start'>
-        <Top/>
-        <Bot/>
+      <div className='hero-section flex flex-col justify-start gap-6 xl:gap-12 lg:gap-12 p-4 xl:p-0 lg:p-0'>
+        <Top />
+        <Bot />
       </div>
     </header>
   );

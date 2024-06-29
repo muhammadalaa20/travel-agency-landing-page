@@ -29,3 +29,17 @@ header {
 .nav-link:hover::after {
     width: 100%;
 }
+
+[type="date"] {
+    background: #fff url(/352469_arrow_up_icon.svg) 100% 35% no-repeat;
+    background-size: 20px;
+}
+
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}

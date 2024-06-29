@@ -13,8 +13,6 @@ export default function Top() {
     }, [index, circles]);
 
 
-    console.log(index)
-
     return (
         <div className="flex flex-row xl:justify-between lg:justify-between justify-center items-center">
             <div className={`${index === 0 ? "block" : "hidden"} xl:ml-8 lg:ml-8 py-20 px-3 gap-5 flex flex-col text-white`}>
@@ -44,13 +42,13 @@ export default function Top() {
             </div>
             <div className="hidden xl:block lg:block p-2">
                 <ul className="flex flex-col gap-6 items-center justify-center p-1">
-                    <li className={`${index === 0 ? "bg-primary" : "bg-white"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(0) }}></li>
-                    <li className={`${index === 1 ? "bg-primary" : "bg-white"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(1) }}></li>
-                    <li className={`${index === 2 ? "bg-primary" : "bg-white"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(2) }}></li>
-                    <li className={`${index === 3 ? "bg-primary" : "bg-white"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(3) }}></li>
-                    <li className={`${index === 4 ? "bg-primary" : "bg-white"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(4) }}></li>
-                    <li className="w-4 h-4 rounded-full flex items-center justify-center cursor-pointer text-white hover:text-primary" onClick={() => { setIndex(prevState => prevState > 0 ? prevState - 1 : circles - 1) }} ><IoIosArrowUp /></li>
-                    <li className="w-4 h-4 rounded-full rotate-180 flex items-center justify-center cursor-pointer text-white hover:text-primary" onClick={() => { setIndex(prevState => prevState < circles - 1 ? prevState + 1 : 0) }}><IoIosArrowUp /></li>
+                    <li className={`${index === 0 ? "bg-primary" : "bg-white dark:bg-slate-900"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(0) }}></li>
+                    <li className={`${index === 1 ? "bg-primary" : "bg-white dark:bg-slate-900"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(1) }}></li>
+                    <li className={`${index === 2 ? "bg-primary" : "bg-white dark:bg-slate-900"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(2) }}></li>
+                    <li className={`${index === 3 ? "bg-primary" : "bg-white dark:bg-slate-900"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(3) }}></li>
+                    <li className={`${index === 4 ? "bg-primary" : "bg-white dark:bg-slate-900"} w-3 h-3 rounded-full text-center cursor-pointer circle`} onClick={() => { setIndex(4) }}></li>
+                    <li className="w-4 h-4 rounded-full flex items-center justify-center cursor-pointer text-white  hover:text-primary" onClick={() => { setIndex(prevState => prevState > 0 ? prevState - 1 : circles - 1) }} ><IoIosArrowUp /></li>
+                    <li className="w-4 h-4 rounded-full rotate-180 flex items-center justify-center cursor-pointer text-white  hover:text-primary" onClick={() => { setIndex(prevState => prevState < circles - 1 ? prevState + 1 : 0) }}><IoIosArrowUp /></li>
                 </ul>
             </div>
         </div>
