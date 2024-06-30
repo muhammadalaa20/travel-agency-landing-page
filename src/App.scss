@@ -43,3 +43,35 @@ header {
 [type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@media screen and (min-width: 769px) {
+    .first-sec-title::after {
+        margin-top: 20px;
+        content: '';
+        width: 25%;
+        height: 2px;
+        background: #FF7757;
+        display: block;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .first-sec-title::after {
+        margin-top: 20px;
+        content: '';
+        width: 70%;
+        height: 2px;
+        background: #FF7757;
+        display: block;
+    } 
+}

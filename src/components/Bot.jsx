@@ -27,8 +27,8 @@ export default function Bot() {
         console.log(formData)
     }
     return (
-        <form onSubmit={handleSubmit} className="booking flex flex-col xl:flex-row lg:flex-row items-center justify-center lg:justify-between xl:justify-between xl:pl-8 lg:pl-8 gap-10 xl:w-11/12 lg:w-11/12 bg-white dark:bg-slate-900 dark:text-white mb-24 rounded-r-lg">
-            <div className="flex flex-col gap-4 border-b-2 border-gray-950 w-40 lg:w-36">
+        <form onSubmit={handleSubmit} className="booking flex flex-col xl:flex-row lg:flex-row items-center justify-center lg:justify-between xl:justify-between xl:pl-8 lg:pl-8 gap-10 xl:w-11/12 lg:w-11/12 bg-white dark:bg-slate-900 dark:text-white mb-24 lg:rounded-r-lg xl:rounded-r-lg xl:rounded-none lg:rounded-none rounded-3xl pt-5 lg:pt-0 xl:pt-0">
+            <div className="flex flex-col gap-4 border-b-2 border-gray-950 w-10/12 pt-3 xl:p-0 lg:p-0 xl:w-40 lg:w-36">
                 <label htmlFor="destination">Destination</label>
                 <input
                     type="text"
@@ -40,7 +40,7 @@ export default function Bot() {
                     value={formData.destination}
                 />
             </div>
-            <div className="flex flex-col gap-4 border-b-2 border-gray-950 w-40 lg:w-36">
+            <div className="flex flex-col gap-4 border-b-2 border-gray-950 w-10/12 pt-3 xl:p-0 lg:p-0 xl:w-40 lg:w-36">
                 <label htmlFor="person">Person</label>
                 <select
                     id="person"
@@ -58,12 +58,12 @@ export default function Bot() {
                     <option value="seven">7</option>
                 </select>
             </div>
-            <div className="flex flex-col gap-4 border-b-2 border-gray-950 w-40 lg:w-36">
+            <div className="flex flex-col gap-4 border-b-2 border-gray-950 w-10/12 pt-3 xl:p-0 lg:p-0 xl:w-40 lg:w-36">
                 <label htmlFor="checkIn">Check In</label>
                 <input
                     id="checkIn"
                     className="date outline-none dark:bg-slate-900 dark:text-white dark:[color-scheme:dark] pb-3"
-                    type="text" 
+                    type="text"
                     placeholder="Day/Month/Year"
                     onFocus={(e) => e.target.type = 'date'} // Corrected to onFocus and using arrow function for setting type
                     onBlur={(e) => !e.target.value && (e.target.type = 'text')} // Corrected to onBlur and using arrow function for conditional type change
@@ -72,7 +72,7 @@ export default function Bot() {
                     value={formData.checkIn}
                 />
             </div>
-            <div className="flex flex-col gap-4 border-b-2 border-gray-950 w-40 lg:w-36">
+            <div className="flex flex-col gap-4 border-b-2 border-gray-950 w-10/12 pt-3 xl:p-0 lg:p-0 xl:w-40 lg:w-36 xl:m-0 lg:m-0 mb-14">
                 <label htmlFor="checkOut">Check Out</label>
                 <input
                     id="checkOut"
@@ -87,7 +87,7 @@ export default function Bot() {
                 />
             </div>
 
-            <button className="bg-primary text-white text-3xl px-5 py-10 rounded-r-lg flex items-center gap-3">Book <br /> Now  <FaArrowRightLong /></button>
+            <button className="bg-primary text-white text-3xl px-5 py-10 rounded-b-3xl xl:rounded-none lg:rounded-none xl:rounded-r-lg lg:rounded-r-lg flex items-center justify-center xl:gap-3 lg:gap-3 gap-8 w-full xl:w-40 lg:w-36">Book <br className="hidden xl:block lg:block" /> Now  <FaArrowRightLong /></button>
 
         </form>
     )
