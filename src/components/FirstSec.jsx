@@ -7,18 +7,16 @@ export default function FirstSec() {
     const right = () => {
         const shifted = cardImages.shift();
         setCardImages([...cardImages, shifted]);
-        console.log(cardImages);
     }
     const left= () => {
         const unShifted = cardImages.pop();
         setCardImages([unShifted, ...cardImages]);
-        console.log(cardImages);
     }
 
     return (
         <div className="first-sec pt-20 xl:pt-24 lg:pt-24 px-4 xl:px-8 lg:px-8 dark:bg-slate-900 dark:text-white flex flex-col gap-24">
             <div className="flex flex-col">
-                <h1 className="first-sec-title text-4xl xl:text-6xl lg:text-6xl mb-5">Popular Destinations</h1>
+                <h1 className="sec-title text-4xl xl:text-6xl lg:text-6xl mb-5">Popular Destinations</h1>
                 <div className="flex justify-between items-center gap-8">
                     <p className="text-gray-500 xl:text-2xl lg:text-2xl text-lg">Most popular destinations around the world, from historical places
                         to natural wonders.</p>
@@ -37,7 +35,7 @@ export default function FirstSec() {
                 <div className="flex overflow-x-scroll pb-10 no-scrollbar items-center justify-center xl:justify-start lg:justify-start">
                     <div className="flex flex-nowrap">
                         <div className="inline-block px-3 card">
-                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl border">
+                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl">
                                 <img src={cardImages[0]} alt="" className="w-full h-full" />
                             </div>
                             <div className="relative z-10 xl:text-xl lg:text-lg text-sm text-white left-6 -top-28 flex flex-col gap-4">
@@ -46,7 +44,7 @@ export default function FirstSec() {
                             </div>
                         </div>
                         <div className="xl:inline-block lg:inline-block hidden px-3 card">
-                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl border">
+                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl">
                                 <img src={cardImages[1]} alt="" className="w-full h-full" />
                             </div>
                             <div className="relative z-10 xl:text-xl lg:text-lg text-sm text-white left-6 -top-28 flex flex-col gap-4">
@@ -55,7 +53,7 @@ export default function FirstSec() {
                             </div>
                         </div>
                         <div className="xl:inline-block lg:inline-block hidden px-3 card">
-                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl border">
+                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl">
                                 <img src={cardImages[2]} alt="" className="w-full h-full" />
                             </div>
                             <div className="relative z-10 xl:text-xl lg:text-lg text-sm text-white left-6 -top-28 flex flex-col gap-4">
@@ -64,7 +62,7 @@ export default function FirstSec() {
                             </div>
                         </div>
                         <div className="xl:inline-block lg:inline-block hidden px-3 card">
-                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl border">
+                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl">
                                 <img src={cardImages[3]} alt="" className="w-full h-full" />
                             </div>
                             <div className="relative z-10 xl:text-xl lg:text-lg text-sm text-white left-6 -top-28 flex flex-col gap-4">
