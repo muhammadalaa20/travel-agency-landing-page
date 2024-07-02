@@ -37,7 +37,7 @@ export default function FirstSec() {
                 <div className="flex overflow-x-scroll pb-10 no-scrollbar items-center justify-center xl:justify-start lg:justify-start">
                     <div className="flex flex-nowrap">
                         <div className="inline-block px-3 card">
-                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-full h-[320] overflow-hidden rounded-3xl border">
+                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl border">
                                 <img src={cardImages[0]} alt="" className="w-full h-full" />
                             </div>
                             <div className="relative z-10 xl:text-xl lg:text-lg text-sm text-white left-6 -top-28 flex flex-col gap-4">
@@ -46,7 +46,7 @@ export default function FirstSec() {
                             </div>
                         </div>
                         <div className="xl:inline-block lg:inline-block hidden px-3 card">
-                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-full h-[320] overflow-hidden rounded-3xl border">
+                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl border">
                                 <img src={cardImages[1]} alt="" className="w-full h-full" />
                             </div>
                             <div className="relative z-10 xl:text-xl lg:text-lg text-sm text-white left-6 -top-28 flex flex-col gap-4">
@@ -55,7 +55,7 @@ export default function FirstSec() {
                             </div>
                         </div>
                         <div className="xl:inline-block lg:inline-block hidden px-3 card">
-                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-full h-[320] overflow-hidden rounded-3xl border">
+                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl border">
                                 <img src={cardImages[2]} alt="" className="w-full h-full" />
                             </div>
                             <div className="relative z-10 xl:text-xl lg:text-lg text-sm text-white left-6 -top-28 flex flex-col gap-4">
@@ -64,7 +64,7 @@ export default function FirstSec() {
                             </div>
                         </div>
                         <div className="xl:inline-block lg:inline-block hidden px-3 card">
-                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-full h-[320] overflow-hidden rounded-3xl border">
+                            <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl border">
                                 <img src={cardImages[3]} alt="" className="w-full h-full" />
                             </div>
                             <div className="relative z-10 xl:text-xl lg:text-lg text-sm text-white left-6 -top-28 flex flex-col gap-4">
@@ -75,10 +75,10 @@ export default function FirstSec() {
                     </div>
                 </div>
                 <div className="flex xl:hidden lg:hidden gap-10 items-center justify-center">
-                    <button className="p-6 bg-black text-white text-lg rounded-2xl hover:bg-primary">
+                    <button className="p-6 bg-black text-white text-lg rounded-2xl hover:bg-primary" onClick={left}>
                         <IoIosArrowBack />
                     </button>
-                    <button className="p-6 bg-black text-white text-lg rounded-2xl hover:bg-primary">
+                    <button className="p-6 bg-black text-white text-lg rounded-2xl hover:bg-primary" onClick={right}>
                         <IoIosArrowForward />
                     </button>
                 </div>
