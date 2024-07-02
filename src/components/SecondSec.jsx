@@ -7,7 +7,8 @@ export default function SecondSec() {
     const [cardTwo, setCardTwo] = useState([true, false, false, false, false]);
     const [cardThree, setCardThree] = useState([true, false, false, false, false]);
     const [cardFour, setCardFour] = useState([true, false, false, false, false]);
-    const[order,setOrder]=useState(["order-1","order-2","order-3","order-4"])
+    const [order, setOrder] = useState(["order-1", "order-2", "order-3", "order-4"])
+    const [display, setDisplay] = useState(["", "hidden", "hidden", "hidden"])
     const rightMove = () => {
         const shiftedCard = order.shift();
         setOrder([...order, shiftedCard]);
@@ -17,7 +18,15 @@ export default function SecondSec() {
         const unShiftedCard = order.pop();
         setOrder([unShiftedCard, ...order]);
     }
-    
+    const shiftLeft = () => {
+        const shiftComponent = display.shift();
+        setDisplay([...display, shiftComponent]);
+    }
+    const shiftRight = () => {
+        const unShiftComponent = display.pop();
+        setDisplay([unShiftComponent, ...display]);
+    }
+
     return (
         <div className="first-sec pt-20 xl:pt-24 lg:pt-24 px-4 xl:px-8 lg:px-8 dark:bg-slate-900 dark:text-white flex flex-col gap-24">
             <div className="flex flex-col">
@@ -39,7 +48,7 @@ export default function SecondSec() {
             <div className="w-full flex flex-col gap-16 card--list">
                 <div className="flex overflow-x-scroll pb-10 no-scrollbar items-center justify-center xl:justify-start lg:justify-start">
                     <div className="flex flex-nowrap">
-                        <div className={`inline-block card ${order[0]} px-3 rounded-t-3xl`}>
+                        <div className={`inline-block card ${order[0]} px-3 rounded-t-3xl ${display[0]} card--component`}>
                             <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[288px] h-[675px] bg-[#FFF8F1] rounded-3xl">
                                 <img src="/image1.jpg" alt="lisbon" className="w-full pb-5 rounded-t-3xl h-[306px]" />
                                 <h1 className="pb-2 text-2xl px-3 dark:text-black">Lisbon, Portugal</h1>
@@ -58,7 +67,7 @@ export default function SecondSec() {
                             </div>
 
                         </div>
-                        <div className={`xl:inline-block lg:inline-block ${order[1]} hidden px-3 card`}>
+                        <div className={`xl:inline-block lg:inline-block ${order[1]} ${display[1]} px-3 card card--component`}>
                             <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[288px] h-[675px] bg-[#FFF8F1] rounded-3xl">
                                 <img src="/image2.jpg" alt="lisbon" className="w-full pb-5 rounded-t-3xl h-[306px]" />
                                 <h1 className="pb-2 text-2xl px-3 dark:text-black">Athens, Greece</h1>
@@ -76,7 +85,7 @@ export default function SecondSec() {
                                 </div>
                             </div>
                         </div>
-                        <div className={`xl:inline-block lg:inline-block ${order[2]} hidden px-3 card`}>
+                        <div className={`xl:inline-block lg:inline-block ${order[2]} ${display[2]} px-3 card card--component`}>
                             <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[288px] h-[675px] bg-[#FFF8F1] rounded-3xl">
                                 <img src="/image3.jpg" alt="lisbon" className="w-full pb-5 rounded-t-3xl h-[306px]" />
                                 <h1 className="pb-2 text-2xl px-3 dark:text-black">Rome, Italy</h1>
@@ -94,7 +103,7 @@ export default function SecondSec() {
                                 </div>
                             </div>
                         </div>
-                        <div className={`xl:inline-block lg:inline-block ${order[3]} hidden px-3 card`}>
+                        <div className={`xl:inline-block lg:inline-block ${order[3]} ${display[3]} px-3 card card--component`}>
                             <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[288px] h-[675px] bg-[#FFF8F1] rounded-3xl">
                                 <img src="/image4.jpg" alt="lisbon" className="w-full pb-5 rounded-t-3xl h-[306px]" />
                                 <h1 className="pb-2 text-2xl px-3 dark:text-black">Alexandria, Egypt</h1>
@@ -115,10 +124,10 @@ export default function SecondSec() {
                     </div>
                 </div>
                 <div className="flex xl:hidden lg:hidden gap-10 items-center justify-center">
-                    <button className="p-6 bg-black text-white text-lg rounded-2xl hover:bg-primary" onClick={leftMove}>
+                    <button className="p-6 bg-black text-white text-lg rounded-2xl hover:bg-primary" onClick={shiftLeft}>
                         <IoIosArrowBack />
                     </button>
-                    <button className="p-6 bg-black text-white text-lg rounded-2xl hover:bg-primary" onClick={rightMove}>
+                    <button className="p-6 bg-black text-white text-lg rounded-2xl hover:bg-primary" onClick={shiftRight}>
                         <IoIosArrowForward />
                     </button>
                 </div>
