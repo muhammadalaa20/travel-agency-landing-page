@@ -41,7 +41,7 @@ export default function FirstSec() {
             </div>
             {/*cards*/}
             <div className="w-full flex flex-col gap-16 card--list">
-                <div className="flex overflow-x-scroll pb-10 no-scrollbar items-center justify-center xl:justify-start lg:justify-start">
+                <div className="flex overflow-x-scroll xl:pb-10 lg:pb-10 no-scrollbar items-center justify-center xl:justify-start lg:justify-start">
                     <div className="flex flex-nowrap">
                         <div className={`inline-block px-3 card ${cardDisplay[0]} ${cardOrder[0]} `}>
                             <div className="xl:w-[497px] xl:h-[661px] lg:w-[497px] lg:h-[661px] w-[221px] h-[320px] overflow-hidden rounded-3xl">
