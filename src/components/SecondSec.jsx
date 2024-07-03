@@ -49,7 +49,7 @@ export default function SecondSec() {
                 <div className="flex overflow-x-scroll pb-10 no-scrollbar items-center justify-center xl:justify-start lg:justify-start">
                     <div className="flex flex-nowrap">
                         <div className={`inline-block card ${order[0]} px-3 rounded-t-3xl ${display[0]} card--component`}>
-                            <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[288px] h-[675px] bg-[#FFF8F1] rounded-3xl">
+                            <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[221px] h-[675px] bg-[#FFF8F1] rounded-3xl">
                                 <img src="/image1.jpg" alt="lisbon" className="w-full pb-5 rounded-t-3xl h-[306px]" />
                                 <h1 className="pb-2 text-2xl px-3 dark:text-black">Lisbon, Portugal</h1>
                                 <div className="flex text-xl gap-1 cursor-pointer pb-6 px-3">
@@ -68,7 +68,7 @@ export default function SecondSec() {
 
                         </div>
                         <div className={`xl:inline-block lg:inline-block ${order[1]} ${display[1]} px-3 card card--component`}>
-                            <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[288px] h-[675px] bg-[#FFF8F1] rounded-3xl">
+                            <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[221px] h-[675px] bg-[#FFF8F1] rounded-3xl">
                                 <img src="/image2.jpg" alt="lisbon" className="w-full pb-5 rounded-t-3xl h-[306px]" />
                                 <h1 className="pb-2 text-2xl px-3 dark:text-black">Athens, Greece</h1>
                                 <div className="flex text-xl gap-1 cursor-pointer pb-6 px-3">
@@ -86,7 +86,7 @@ export default function SecondSec() {
                             </div>
                         </div>
                         <div className={`xl:inline-block lg:inline-block ${order[2]} ${display[2]} px-3 card card--component`}>
-                            <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[288px] h-[675px] bg-[#FFF8F1] rounded-3xl">
+                            <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[221px] h-[675px] bg-[#FFF8F1] rounded-3xl">
                                 <img src="/image3.jpg" alt="lisbon" className="w-full pb-5 rounded-t-3xl h-[306px]" />
                                 <h1 className="pb-2 text-2xl px-3 dark:text-black">Rome, Italy</h1>
                                 <div className="flex text-xl gap-1 cursor-pointer pb-6 px-3">
@@ -104,7 +104,7 @@ export default function SecondSec() {
                             </div>
                         </div>
                         <div className={`xl:inline-block lg:inline-block ${order[3]} ${display[3]} px-3 card card--component`}>
-                            <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[288px] h-[675px] bg-[#FFF8F1] rounded-3xl">
+                            <div className="flex flex-col xl:w-[341px] lg:w-[341px] xl:h-[623px] lg:h-[623px] w-[221px] h-[675px] bg-[#FFF8F1] rounded-3xl">
                                 <img src="/image4.jpg" alt="lisbon" className="w-full pb-5 rounded-t-3xl h-[306px]" />
                                 <h1 className="pb-2 text-2xl px-3 dark:text-black">Alexandria, Egypt</h1>
                                 <div className="flex text-xl gap-1 cursor-pointer pb-6 px-3">
